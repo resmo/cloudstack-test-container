@@ -15,7 +15,7 @@ COPY zones.cfg /opt/zones.cfg
 
 COPY nginx_default.conf /etc/nginx/sites-available/default
 
-RUN pipx install cs
+RUN pipx install cs>=5.1.0
 
 COPY run.sh /opt/run.sh
 COPY deploy.sh /opt/deploy.sh
